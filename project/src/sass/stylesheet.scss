@@ -4,11 +4,14 @@ $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
 $primary-color: #FFF;
 $chaordic-color: #AA1423;
-$orange-color: #F07225;
+$secondary-color: #F07225;
 
 body {
 	font-family: $font-primary;
 	background-color: $primary-color;
+}
+*:focus {
+    outline: none;
 }
 .section {
 	width: 100%;
@@ -48,19 +51,16 @@ main {
 	}
 	.txt-shortener {
 		border: none;
-		border-bottom: 3px solid $orange-color;
+		border-bottom: 3px solid $secondary-color;
 		background-color: transparent;
-		color: $orange-color;
+		color: $secondary-color;
 		font-size: 100%;
 		width: 100%;
 		padding-bottom: 2.5%;
 	}
-	.txt-shortener:focus {
-		outline: none;
-	}
 	.btn-shortener {
-		background-color: $orange-color;
-		border: 2px solid $orange-color;
+		background-color: $secondary-color;
+		border: 2px solid $secondary-color;
 		color: $primary-color;
 		padding: 5%;
 		width: 100%;
@@ -79,9 +79,9 @@ main {
 		border-bottom: 1px solid #DDD;
 		padding: 1%;
 		margin:1%;
-	}
-	.row:last-child {
-		border:0;
+		&:last-child {
+			border:0;
+		}
 	}
 	h2 {
 		color: $chaordic-color;
@@ -91,6 +91,9 @@ main {
 		color: $chaordic-color;
 		font-weight: bold;
 		text-align: justify;
+	}
+	.ranking-link a {
+		color: $chaordic-color;
 	}
 	.ranking-clicks {
 		color: #777;
@@ -170,6 +173,10 @@ footer {
 	.hits {
 		width: 60%;
 	}	
+	.ranking .col-sm-8 {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.ranking .ranking-link {
 		text-align: center;
 	}

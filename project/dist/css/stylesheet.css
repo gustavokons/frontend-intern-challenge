@@ -3,6 +3,9 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #FFF; }
 
+*:focus {
+  outline: none; }
+
 .section {
   width: 100%; }
 
@@ -42,8 +45,6 @@ main {
     font-size: 100%;
     width: 100%;
     padding-bottom: 2.5%; }
-  .main .txt-shortener:focus {
-    outline: none; }
   .main .btn-shortener {
     background-color: #F07225;
     border: 2px solid #F07225;
@@ -62,8 +63,8 @@ main {
     border-bottom: 1px solid #DDD;
     padding: 1%;
     margin: 1%; }
-  .ranking .row:last-child {
-    border: 0; }
+    .ranking .row:last-child {
+      border: 0; }
   .ranking h2 {
     color: #AA1423;
     font-family: "Roboto Slab", serif; }
@@ -71,6 +72,8 @@ main {
     color: #AA1423;
     font-weight: bold;
     text-align: justify; }
+  .ranking .ranking-link a {
+    color: #AA1423; }
   .ranking .ranking-clicks {
     color: #777;
     text-align: right; }
@@ -133,6 +136,9 @@ footer {
     width: 50%; }
   .hits {
     width: 60%; }
+  .ranking .col-sm-8 {
+    padding-left: 0;
+    padding-right: 0; }
   .ranking .ranking-link {
     text-align: center; }
   .ranking .ranking-clicks {
