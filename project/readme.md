@@ -2,7 +2,6 @@
 
 ### Estrutura de Pasta
 - dist (pasta onde será gerados os arquivos finais gerados pela rotinas do Gulp)
-- node modules (bibliotecas instaladas do Gulp)
 - src (código fonte do projeto com o .html e suas dependências de .css,.jss,.scss)
 
 ### Bibliotecas/Framework Usadas
