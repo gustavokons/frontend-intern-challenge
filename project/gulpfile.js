@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var git = require('gulp-git');
+var runSequence = require('run-sequence');
 var imagemin = require('gulp-imagemin');
 var changed  = require('gulp-changed');
 var cssmin = require('gulp-cssmin');
@@ -41,4 +43,24 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('default', ['copy','img-min','css-min','js-min','sass']);
+gulp.task('git-add', function(){
+	return gulp.src('./dist/*')
+    	.pipe(git.add());
+});
+
+gulp.task('git-commit', function(){
+	return gulp.src('./dist/*')
+    	.pipe(git.commit('Teste Commit Gulp 5!'));
+});
+
+gulp.task('git-push', function(){
+	git.push('origin', 'master', function (err) {
+    	if (err) throw err;
+  	});
+});
+
+gulp.task('build', function(){
+	runSequence(['copy','img-min','css-min','js-min','sass','git-add','git-commit','git-push']);
+});
+
+gulp.task('default', ['build']);
