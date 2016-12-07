@@ -1,0 +1,149 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab';
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FFF; }
+
+*:focus {
+  outline: none; }
+
+.section {
+  width: 100%; }
+
+.section-grey {
+  background-color: #DDD; }
+
+header {
+  text-align: center; }
+  header .logo {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: 0 auto; }
+
+main {
+  background-image: url(../images/background-home.jpg);
+  width: 100%;
+  background-size: cover;
+  padding: 15% 0;
+  text-align: center; }
+
+.main {
+  margin: 0 auto;
+  width: 40%;
+  color: #FFF; }
+  .main .row {
+    margin-top: 10%; }
+  .main h1 {
+    padding-top: 0;
+    margin-top: 0; }
+  .main h1, .main p {
+    font-family: "Roboto Slab", serif; }
+  .main .txt-shortener {
+    border: none;
+    border-bottom: 3px solid #F07225;
+    background-color: transparent;
+    color: #F07225;
+    font-size: 100%;
+    width: 100%;
+    padding-bottom: 2.5%; }
+  .main .btn-shortener {
+    background-color: #F07225;
+    border: 2px solid #F07225;
+    color: #FFF;
+    padding: 5%;
+    width: 100%;
+    font-weight: 500; }
+
+.ranking {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 40%; }
+  .ranking .row {
+    border-bottom: 1px solid #DDD;
+    padding: 1%;
+    margin: 1%; }
+    .ranking .row:last-child {
+      border: 0; }
+  .ranking h2 {
+    color: #AA1423;
+    font-family: "Roboto Slab", serif; }
+  .ranking .ranking-link {
+    color: #AA1423;
+    font-weight: bold;
+    text-align: justify; }
+  .ranking .ranking-link a {
+    color: #AA1423; }
+  .ranking .ranking-clicks {
+    color: #777;
+    text-align: right; }
+
+.hits {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 20%;
+  background-color: #DDD; }
+  .hits h2 {
+    color: #AA1423;
+    font-family: "Roboto Slab", serif; }
+  .hits .txt-hits {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #CCC;
+    margin-top: 10%;
+    color: #AA1423;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center; }
+  .hits h4 {
+    color: #777; }
+
+::-webkit-input-placeholder {
+  color: #F07225; }
+
+:-moz-placeholder {
+  color: #F07225; }
+
+footer {
+  padding: 1% 0%;
+  width: 100%; }
+  footer .description {
+    color: #AA1423;
+    font-size: 2em; }
+  footer .icons-footer {
+    text-align: right;
+    padding: 1% 0; }
+
+@media only screen and (max-device-width: 768px) {
+  .main {
+    width: 60%; }
+  .main .btn-shortener {
+    margin-top: 5%;
+    padding: 5%;
+    width: 50%; }
+  .hits {
+    width: 40%; } }
+
+@media only screen and (max-device-width: 480px) {
+  .main {
+    width: 90%; }
+  .main .btn-shortener {
+    margin-top: 5%;
+    padding: 5%;
+    width: 50%; }
+  .hits {
+    width: 60%; }
+  .ranking .col-sm-8 {
+    padding-left: 0;
+    padding-right: 0; }
+  .ranking .ranking-link {
+    text-align: center; }
+  .ranking .ranking-clicks {
+    text-align: center; }
+  footer .description {
+    text-align: center; }
+  footer .icons-footer {
+    text-align: center; } }
